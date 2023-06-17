@@ -79,7 +79,7 @@ select {
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: var(--light-grayish-blue);
-}
+  }
 
 
 
@@ -91,12 +91,16 @@ body{
 
 
 img{
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 }
 
 .student-info{
     display: flex;
+    align-content: center;
+}
+
+.name{
+  margin-left: 20px;
 }
 
 h1{
@@ -106,8 +110,13 @@ h1{
     margin-top: 30px;
 }
 
-p{
+h2{
+  margin-top: 20px;
+}
+
+blockquote{
     font-weight: 500;
+    margin-top: 30px;
 }
 
 .daniel{
@@ -115,12 +124,53 @@ p{
     color: var(--white);
 }
 
+
+
 .jonathan{
     background-color: var(--very-dark-grayish-blue);
     color: var(--white);
 }
 
+.jeanette{
+  background-color: var(--white);
+}
+
 .patrick{
     background-color: var(--very-dark-blackish-blue);
     color: var(--white);
+}
+
+.kira{
+  background-color: var(--white);
+}
+
+@media only screen and (min-width:46.9rem){
+  main{
+    display: grid;
+    grid-template-areas:
+    "review1 review1 review2 review5"
+    "review3 review4 review4 review5";
+  background-color: aqua;  } 
+
+  .daniel{
+    grid-area: review1;
+  }
+
+    
+  .jonathan{
+    grid-area: review2;
+  }
+
+  .jeanette{
+    grid-area: review3;
+  }
+
+  .patrick{
+    grid-area: review4;
+  }
+
+  .kira{
+    grid-area: review5;
+  }
+
 }
